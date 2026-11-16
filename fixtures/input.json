@@ -1,0 +1,27 @@
+{
+  "picks": [
+    {
+      "station": "STA01",
+      "phase": "P",
+      "time": 10.02,
+      "magnitude": 2.1
+    },
+    {
+      "station": "STA02",
+      "phase": "S",
+      "time": 10.15,
+      "magnitude": 2.0
+    },
+    {
+      "station": "STA03",
+      "phase": "P",
+      "time": 10.1,
+      "magnitude": 2.2
+    }
+  ],
+  "clock_corrections": {
+    "STA01": -0.02,
+    "STA02": 0.0,
+    "STA03": 0.01
+  }
+}
