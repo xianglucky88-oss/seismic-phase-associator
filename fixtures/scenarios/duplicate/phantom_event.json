@@ -1,0 +1,10 @@
+{
+  "_note": "Duplicate delivery of the whole two-station set offset by 0.04 s. Different corrected times mean the copies form a SECOND event with the same station pair, so the output shows two events for one physical event. This is the duplicate case that is NOT caught.",
+  "picks": [
+    {"station": "STA01", "phase": "P", "time": 10.0, "magnitude": 2.1},
+    {"station": "STA02", "phase": "S", "time": 10.0, "magnitude": 2.0},
+    {"station": "STA01", "phase": "P", "time": 10.0, "magnitude": 2.1},
+    {"station": "STA02", "phase": "S", "time": 10.04, "magnitude": 2.0}
+  ],
+  "clock_corrections": {}
+}

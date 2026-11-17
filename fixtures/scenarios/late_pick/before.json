@@ -1,0 +1,8 @@
+{
+  "_note": "Two-pick baseline used by the late-pick scenario. Run the CLI on this file, then on late_pick/after.json.",
+  "picks": [
+    {"station": "STA01", "phase": "P", "time": 10.0, "magnitude": 2.1},
+    {"station": "STA02", "phase": "S", "time": 10.1, "magnitude": 2.0}
+  ],
+  "clock_corrections": {}
+}

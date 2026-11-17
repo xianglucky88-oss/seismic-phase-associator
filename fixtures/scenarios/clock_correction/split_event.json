@@ -1,0 +1,8 @@
+{
+  "_note": "A station correction large enough to push a pick outside the 0.25 s window splits the event: the two singles are each rejected as single-station events. rejected_pick_count becomes 2. A clock-configuration change is therefore also an event-membership change, not merely a timestamp shift.",
+  "picks": [
+    {"station": "STA01", "phase": "P", "time": 10.0, "magnitude": 2.1},
+    {"station": "STA02", "phase": "S", "time": 10.1, "magnitude": 2.0}
+  ],
+  "clock_corrections": {"STA02": 0.5}
+}

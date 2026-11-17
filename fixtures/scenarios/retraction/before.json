@@ -1,0 +1,9 @@
+{
+  "_note": "Baseline for the retraction scenario: one accepted event on three stations.",
+  "picks": [
+    {"station": "STA01", "phase": "P", "time": 10.0, "magnitude": 2.1},
+    {"station": "STA02", "phase": "S", "time": 10.1, "magnitude": 2.0},
+    {"station": "STA03", "phase": "P", "time": 10.2, "magnitude": 2.2}
+  ],
+  "clock_corrections": {}
+}

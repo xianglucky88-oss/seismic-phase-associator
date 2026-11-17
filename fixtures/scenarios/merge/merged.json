@@ -1,0 +1,10 @@
+{
+  "_note": "Merging the two catalogs is expressed only as the union of picks -- there is no merge record. The 20.0 s event, previously evt-001, is now evt-002 because identifiers are assigned by position in corrected-time order. Any downstream reference to evt-001 from Catalog B's run now silently points at Catalog A's event.",
+  "picks": [
+    {"station": "STA01", "phase": "P", "time": 10.0, "magnitude": 2.1},
+    {"station": "STA02", "phase": "S", "time": 10.1, "magnitude": 2.0},
+    {"station": "STA03", "phase": "P", "time": 20.0, "magnitude": 3.4},
+    {"station": "STA04", "phase": "S", "time": 20.1, "magnitude": 3.2}
+  ],
+  "clock_corrections": {}
+}

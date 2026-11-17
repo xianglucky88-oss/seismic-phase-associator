@@ -1,0 +1,7 @@
+{
+  "_note": "Retracting one of an event's only two stations leaves a single-station event, which the engine rejects entirely. This is the destructive retraction case: the event disappears from the output rather than degrading.",
+  "picks": [
+    {"station": "STA01", "phase": "P", "time": 10.0, "magnitude": 2.1}
+  ],
+  "clock_corrections": {}
+}

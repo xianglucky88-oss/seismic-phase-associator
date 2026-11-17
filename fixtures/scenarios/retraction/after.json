@@ -1,0 +1,8 @@
+{
+  "_note": "An operator retracts STA02's S pick. There is no retraction field in the input contract, so retraction is modelled as resubmitting the input WITHOUT the pick. The event survives on STA01+STA03 but origin_time and pick_count change.",
+  "picks": [
+    {"station": "STA01", "phase": "P", "time": 10.0, "magnitude": 2.1},
+    {"station": "STA03", "phase": "P", "time": 10.2, "magnitude": 2.2}
+  ],
+  "clock_corrections": {}
+}

@@ -1,0 +1,9 @@
+{
+  "_note": "Same picks, but STA01's clock correction changes from 0.0 to +0.3 s. STA01 now sorts AFTER STA02, so STA02 becomes the origin station and origin_time moves from 10.0 to 10.1. The event still assembled, but every derived time (and, in a future magnitude step, the magnitude source) attaches to a different origin pick.",
+  "picks": [
+    {"station": "STA01", "phase": "P", "time": 10.0, "magnitude": 2.1},
+    {"station": "STA02", "phase": "S", "time": 10.1, "magnitude": 2.0},
+    {"station": "STA03", "phase": "P", "time": 10.2, "magnitude": 2.2}
+  ],
+  "clock_corrections": {"STA01": 0.3}
+}

@@ -1,0 +1,9 @@
+{
+  "_note": "A pick can only ever join an event whose origin is at most 0.25 s away, and an event's origin is the first pick assigned to it. So when an event ends up with one station and is rejected, its pick is discarded permanently: there is no later event it could have qualified for. STA01@10.0 forms evt-001 alone; STA02@10.3 is 0.3 s away so it forms evt-002; STA03@10.55 joins evt-002. evt-001 is rejected and STA01 disappears from the result. rejected_pick_count=1 is the only trace. A station that is isolated by less than a threshold's worth of timing is unrecoverable, not retried.",
+  "picks": [
+    {"station": "STA01", "phase": "P", "time": 10.0, "magnitude": 2.1},
+    {"station": "STA02", "phase": "S", "time": 10.3, "magnitude": 2.0},
+    {"station": "STA03", "phase": "P", "time": 10.55, "magnitude": 2.2}
+  ],
+  "clock_corrections": {}
+}

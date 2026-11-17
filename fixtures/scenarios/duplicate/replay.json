@@ -1,0 +1,9 @@
+{
+  "_note": "Duplicate delivery of STA01's P pick. The engine has no dedupe key: the second copy cannot join the event because the station is already a member, so it is silently counted in rejected_pick_count.",
+  "picks": [
+    {"station": "STA01", "phase": "P", "time": 10.0, "magnitude": 2.1},
+    {"station": "STA02", "phase": "S", "time": 10.1, "magnitude": 2.0},
+    {"station": "STA01", "phase": "P", "time": 10.0, "magnitude": 2.1}
+  ],
+  "clock_corrections": {}
+}

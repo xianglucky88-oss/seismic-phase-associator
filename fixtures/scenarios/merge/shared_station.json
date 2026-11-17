@@ -1,0 +1,10 @@
+{
+  "_note": "Merging two events that share STA01. Trace: STA01@10.0 creates evt-001; STA02@10.0 joins evt-001; STA01@10.1 fails evt-001's one-pick-per-station guard, so it creates evt-002; STA03@10.1 then matches the FIRST event that accepts it, which is evt-001 (not the nearer-in-creation evt-002). Net: evt-001 has 3 picks and is accepted; evt-002 is left as a single-station event and is rejected. rejected_pick_count=1. The lost pick is the second STA01, and the routing shows the matcher is first-match, not nearest-match. A merge can silently lose a pick with no error surfaced.",
+  "picks": [
+    {"station": "STA01", "phase": "P", "time": 10.0, "magnitude": 2.1},
+    {"station": "STA02", "phase": "S", "time": 10.0, "magnitude": 2.0},
+    {"station": "STA01", "phase": "P", "time": 10.1, "magnitude": 2.1},
+    {"station": "STA03", "phase": "S", "time": 10.1, "magnitude": 2.0}
+  ],
+  "clock_corrections": {}
+}

@@ -1,0 +1,9 @@
+{
+  "_note": "STA03 arrives after the run that produced before.json. Processing is sorted by corrected time, so STA03 (9.8) is processed FIRST: it creates a new evt-001 at 9.8, STA01 (10.0) then joins it (0.2 s <= 0.25 s), and STA02 (10.1) is 0.3 s from the new origin so it can no longer join and is left as a single-station event, which is rejected. Net effect: event_id stays evt-001, origin_time MOVES BACKWARDS from 10.0 to 9.8, and the station set changes from {STA01,STA02} to {STA01,STA03}. A late pick can therefore silently rewrite an already-published event rather than adding to it.",
+  "picks": [
+    {"station": "STA01", "phase": "P", "time": 10.0, "magnitude": 2.1},
+    {"station": "STA02", "phase": "S", "time": 10.1, "magnitude": 2.0},
+    {"station": "STA03", "phase": "P", "time": 9.8, "magnitude": 2.3}
+  ],
+  "clock_corrections": {}
+}

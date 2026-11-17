@@ -1,0 +1,9 @@
+{
+  "_note": "Same three picks as greedy_drop.json but STA01 moved 0.06 s later. STA01@10.06 creates evt-001; STA02@10.3 is 0.24 s away and joins it; STA03@10.55 is 0.49 s from the evt-001 origin and creates/left as a rejected single. Two adjacent runs with a 0.06 s input difference redistribute which station pair is published and which pick is discarded. There is no rule that the accepted pair is the 'best' pair -- acceptance depends on creation order.",
+  "picks": [
+    {"station": "STA01", "phase": "P", "time": 10.06, "magnitude": 2.1},
+    {"station": "STA02", "phase": "S", "time": 10.3, "magnitude": 2.0},
+    {"station": "STA03", "phase": "P", "time": 10.55, "magnitude": 2.2}
+  ],
+  "clock_corrections": {}
+}

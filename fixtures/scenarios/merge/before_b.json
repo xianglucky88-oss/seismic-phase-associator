@@ -1,0 +1,8 @@
+{
+  "_note": "Catalog B in isolation: one accepted event at 20.0 s. Run the CLI on this file alone; it ALSO reports evt-001. The same identifier denotes a different physical event depending on which input it is computed from -- which is why event_id cannot be used as a cross-run identity.",
+  "picks": [
+    {"station": "STA03", "phase": "P", "time": 20.0, "magnitude": 3.4},
+    {"station": "STA04", "phase": "S", "time": 20.1, "magnitude": 3.2}
+  ],
+  "clock_corrections": {}
+}
